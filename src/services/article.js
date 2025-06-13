@@ -5,7 +5,10 @@ const rapidApiKey = import.meta.env.VITE_RAPID_API_ARTICLE_KEY;
 export const articleApi = createApi({
   reducerPath: "articleApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://article-extractor-and-summarizer.p.rapidapi.com/",
+    baseUrl: "curl --request GET 
+	--url 'https://article-extractor-and-summarizer.p.rapidapi.com/summarize?url=https%3A%2F%2Ftime.com%2F6266679%2Fmusk-ai-open-letter%2F&lang=en&engine=2' 
+	--header 'x-rapidapi-host: article-extractor-and-summarizer.p.rapidapi.com' 
+	--header 'x-rapidapi-key: 92b80ef411msh6cbbfdb3ef7e713p105809jsn023cb4cc92af'",
     prepareHeaders: (headers) => {
       headers.set("X-RapidAPI-Key", rapidApiKey);
       headers.set(
