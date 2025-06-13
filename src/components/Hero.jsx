@@ -9,7 +9,7 @@ const Hero = () => {
         <button
           type="button"
           onClick={() => {
-            window.open("https://github.com/Devildev07/Ai-summeriser");
+            window.open("https://github.com/royalrajputayush/ai-summeriser");
           }}
           className="black_btn"
         >
